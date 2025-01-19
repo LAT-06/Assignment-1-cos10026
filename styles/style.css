@@ -1,0 +1,97 @@
+/* Body Styling */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Black background */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: flex-start; /* Align to the top */
+    height: 100vh;
+  }
+  
+  /* Nav Container */
+  .nav {
+    position: relative;
+    background-color: #111; /* Slightly lighter black for the nav bar */
+    width: 500px;
+    height: 60px;
+    margin-top: 20px; /* Add a small margin from the top */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Buttons */
+  .btn {
+    color: #fff; /* White text */
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s;
+  }
+  
+  .btn:hover {
+    color: #ddd; /* Light gray text on hover */
+  }
+  
+  /* Horizontal Bars */
+  .line {
+    position: absolute;
+    height: 4px;
+    background-color: #fff; /* White lines */
+    transition: all 0.3s ease;
+  }
+  
+  /* Top Line */
+  .line.top {
+    width: 40px; /* Default width */
+    top: -6px; /* Position just above the nav bar */
+    left: 10px; /* Default position */
+  }
+  
+  /* Bottom Line */
+  .line.bottom {
+    width: 40px; /* Default width */
+    bottom: -6px; /* Position just below the nav bar */
+    left: 450px; /* Default position */
+  }
+  
+  /* On Hover: Move lines to align with the hovered button */
+  .btn:nth-child(1):hover ~ .line.top {
+    left: calc(10% - 20px); /* Align with the first button */
+  }
+  .btn:nth-child(1):hover ~ .line.bottom {
+    left: calc(10% - 20px); /* Align with the first button */
+  }
+  
+  .btn:nth-child(2):hover ~ .line.top {
+    left: calc(30% - 20px); /* Align with the second button */
+  }
+  .btn:nth-child(2):hover ~ .line.bottom {
+    left: calc(30% - 20px); /* Align with the second button */
+  }
+  
+  .btn:nth-child(3):hover ~ .line.top {
+    left: calc(50% - 20px); /* Align with the third button */
+  }
+  .btn:nth-child(3):hover ~ .line.bottom {
+    left: calc(50% - 20px); /* Align with the third button */
+  }
+  
+  .btn:nth-child(4):hover ~ .line.top {
+    left: calc(70% - 20px); /* Align with the fourth button */
+  }
+  .btn:nth-child(4):hover ~ .line.bottom {
+    left: calc(70% - 20px); /* Align with the fourth button */
+  }
+  
+  .btn:nth-child(5):hover ~ .line.top {
+    left: calc(90% - 20px); /* Align with the fifth button */
+  }
+  .btn:nth-child(5):hover ~ .line.bottom {
+    left: calc(90% - 20px); /* Align with the fifth button */
+}
