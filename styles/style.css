@@ -62,36 +62,40 @@ body {
   
   /* On Hover: Move lines to align with the hovered button */
   .btn:nth-child(1):hover ~ .line.top {
-    left: calc(10% - 20px); /* Align with the first button */
+    left: calc(9.5% - 20px); /* Align with the first button */
   }
   .btn:nth-child(1):hover ~ .line.bottom {
-    left: calc(10% - 20px); /* Align with the first button */
+    left: calc(9.5% - 20px); /* Align with the first button */
   }
   
   .btn:nth-child(2):hover ~ .line.top {
-    left: calc(30% - 20px); /* Align with the second button */
+    left: calc(28.3% - 20px); /* Align with the second button */
   }
   .btn:nth-child(2):hover ~ .line.bottom {
-    left: calc(30% - 20px); /* Align with the second button */
+    left: calc(28.3% - 20px); /* Align with the second button */
   }
   
   .btn:nth-child(3):hover ~ .line.top {
-    left: calc(50% - 20px); /* Align with the third button */
+    left: calc(46.5% - 20px); /* Align with the third button */
+    width: 25px;
   }
   .btn:nth-child(3):hover ~ .line.bottom {
-    left: calc(50% - 20px); /* Align with the third button */
+    left: calc(46.5% - 20px); /* Align with the third button */
+    width: 25px;
   }
   
   .btn:nth-child(4):hover ~ .line.top {
-    left: calc(70% - 20px); /* Align with the fourth button */
+    left: calc(61.5% - 20px); /* Align with the fourth button */
   }
   .btn:nth-child(4):hover ~ .line.bottom {
-    left: calc(70% - 20px); /* Align with the fourth button */
+    left: calc(61.5% - 20px); /* Align with the fourth button */
   }
   
   .btn:nth-child(5):hover ~ .line.top {
-    left: calc(90% - 20px); /* Align with the fifth button */
+    left: calc(80.5% - 20px); /* Align with the fifth button */
+    width: 85px;
   }
   .btn:nth-child(5):hover ~ .line.bottom {
-    left: calc(90% - 20px); /* Align with the fifth button */
+    width: 85px;
+    left: calc(80.5% - 20px); /* Align with the fifth button */
 }
