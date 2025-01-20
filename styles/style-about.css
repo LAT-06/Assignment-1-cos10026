@@ -4,3 +4,22 @@ author: Ngoc Nam
 Created: 20 January 2025
 Description: about.html
 */
+
+body {
+    color: #fff;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.Nam {
+    
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 50px;
+}
+
