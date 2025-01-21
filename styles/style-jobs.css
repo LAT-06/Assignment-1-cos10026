@@ -9,6 +9,7 @@ Description: jobs.html
 
 body{
     color: #FBFCD4;
+    font-family: 'Montserrat';
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
@@ -18,6 +19,10 @@ body{
     margin-bottom: 20px;
 }
 
+#header{
+    margin-bottom: 10px
+}
+
 .text-container{
     overflow: hidden;
 }
@@ -25,26 +30,90 @@ body{
 h1{
     font: 2rem 'Montserrat';
     color: gold;
-    animation: slideInLeft 1.25s linear 1;
 }
 
 #mid{
-    width: 99.3vw;
-    height: 500px;
-    background-color: blue;
+    width: 98vw;
+    height: auto;
 }
 
-aside{
+main{
+    margin: 20px;
+    padding: 20px;
+    width: calc(100% - 25vw - 160px);
+    height: calc(100% - 80px);
+    background-color: black;
+}
+
+.main-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+.card{
+    overflow: hidden;
+    border-radius: 15px;
+    color: black;
+    background-color: #1e1e1e;
+    transition: transform 0.3s ease-in-out;
+    width: calc(50% - 60px);
+}
+
+.card:hover{
+    transform: translateY(-2.5%);
+}
+
+#card-header{
+    padding: 10px 20px;
+    background: gold;
+    text-align: center;
+}
+
+#card-header h2{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h3, p{
+    display: inline;
+}
+
+.card-salary{
+    color: greenyellow;
+}
+
+#card-body{
+    color: white;
+    padding: 10px 20px;
+}
+
+.card-report{
+    text-align: center;
+}
+
+aside{    
+    margin: 20px;
+    padding: 20px;
     width: 25vw;
     height: calc(100% - 80px);
-    padding: 20px;
-    margin: 20px;
     background-color: tomato;
     float: right;
 }
 
+
 hr{
-    width: 99.3vw;
+    width: 98vw;
+}
+
+@keyframes rotBGimg{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }
 
 @keyframes slideInLeft {
