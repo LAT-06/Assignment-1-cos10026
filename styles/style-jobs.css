@@ -5,4 +5,71 @@ Created: 20 January 2025
 Description: jobs.html
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap');
 
+body{
+    color: #FBFCD4;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.nav{
+    margin-bottom: 20px;
+}
+
+.text-container{
+    overflow: hidden;
+}
+
+h1{
+    font: 2rem 'Montserrat';
+    color: gold;
+    animation: slideInLeft 1.25s linear 1;
+}
+
+#mid{
+    width: 99.3vw;
+    height: 500px;
+    background-color: blue;
+}
+
+aside{
+    width: 25vw;
+    height: calc(100% - 80px);
+    padding: 20px;
+    margin: 20px;
+    background-color: tomato;
+    float: right;
+}
+
+hr{
+    width: 99.3vw;
+}
+
+@keyframes slideInLeft {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slideInRight {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slideInDown {
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
