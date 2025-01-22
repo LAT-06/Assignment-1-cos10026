@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT web group AS1</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style-apply.css">
+</head>
+<body>
+    <div class="nav">
+      <a class="btn">Home</a>
+      <a class="btn">About</a>
+      <a class="btn">Job</a>
+      <a class="btn">Apply</a>
+      <a class="btn">Enhancement</a>
+      <div class="line top"></div>
+      <div class="line bottom"></div>
+    </div>
+
+    <div class="form-container"> 
+        <header>
+                <div class="text-container">
+                    <h1><strong>Application Form</strong></h1>
+                </div>
+        </header>
+        
+        <form>
+            <div class="text">
+                <label for="jobnum">Job Reference Number</label><br>
+                <input type="text" id="jobnum" name="jobnum" style="background-color: #afa1a1;"  pattern="[A-Za-z0-9]"{5} required>
+            </div>
+            
+            <div class="text">
+                <label for="name1">First Name</label>
+                <label style="margin-left: 86px;"name="last-name" for="name2">Last Name</label>
+                
+                <div class="textbox">
+                    <input type="text" id="name1" name="name" style="background-color: #afa1a1;" maxlength="20" pattern="[A-Za-z]" required>
+                    <input type="text" id="name2" name="name" style="background-color: #afa1a1;" maxlength="20" pattern="[A-Za-z]" required>
+                </div>
+            </div>
+
+            <div class="text">
+                <label for="birthdate">Date of Birth</label><br>
+                <input type="date" id="birthdate" name="birthdate" style="background-color: #afa1a1;" required>
+            </div>
+
+            <div class="text">
+                <fieldset>
+                    <legend>Gender</legend>
+                    <div class="text">
+                        <label for="gender">Male</label>
+                        <input type="radio" id="gender" name="gender" value="male" checked="checked">
+                        <label for="gender">Female</label>
+                        <input type="radio" id="gender" name="gender" value="female">
+                    </div>
+                    
+                </fieldset>
+            </div>
+
+            <div class="text">
+                <label for="strad">Street Address</label>
+
+                <div class="textbox" >
+                    <input type="text" id="strad" name="strad" style="background-color: #afa1a1;" size="49" maxlength="40" required>
+                </div>
+            </div>
+
+            <div class="text">
+                <label for="town">Suburb/Town</label>
+
+                <div class="textbox">
+                    <input type="text" id="town" name="town" style="background-color: #afa1a1;" maxlength="40" required>
+                </div>
+            </div>
+
+            <div class="text">
+                <label for="state">State</label>
+
+                <div class="textbox">
+                    <select name="state" id="state" required>
+                        <option>Select your State</option>
+                        <option>VIC</option>
+                        <option>NSW</option>
+                        <option>QLD</option>
+                        <option>NT</option>
+                        <option>WA</option>
+                        <option>SA</option>
+                        <option>TAS</option>
+                        <option>ACT</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="text">
+                <label for="postal">Postcode</label>
+
+                <div class="textbox">
+                    <input type="text" id="postal" name="postal" style="background-color: #afa1a1;" pattern="[0-9]{4}" required>
+                </div>
+            </div>
+
+            <div class="text">
+                <label for="phone">Phone Number</label>
+                <div class="textbox">
+                    <input type="text" id="phone" name="phone" style="background-color: #afa1a1;" pattern="[0-9\s]{8,12}" required>
+                </div>
+            </div>
+
+            <div class="text">
+                <label for="email">Email Address</label>
+                <div class="textbox">
+                    <input type="email" id="email" name="email" style="background-color: #afa1a1;" required>
+                </div>
+            </div>
+            
+        </form>
+
+    </div>
+    
+    
+    
+</body>
+</html>

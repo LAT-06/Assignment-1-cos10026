@@ -1,0 +1,66 @@
+/*
+Filename: Application Form
+Author: Nguyen Lam Minh Huy
+Created: 22th Jan 2025
+Description: apply.html
+*/
+
+
+body{
+    font-family: 'Montserrat';
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.nav{
+    margin-bottom: 125px;
+}
+
+
+
+.text-container{
+    background-color: #585757;
+    margin: 30px;
+    border-radius: 10px;
+}
+
+h1{
+    font-size: 40px;
+    color: rgb(231, 202, 37);
+}
+
+.form-container {
+    width: 500px;
+    text-align: center;
+    background-color: #151515;
+    border-radius: 15px;
+}
+
+.text {
+    
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-right: 100px;
+    position: relative;
+    color: rgb(231, 202, 37);
+}
+
+input {
+    border: 1px solid #000000;
+    outline: none;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    transition: all 0.30s ease-in-out;
+}
+
+input:hover {
+    background-color: #fafafa;
+}
+
+input:hover {
+    border: 1px solid #FFFFFF;
+    
+}
