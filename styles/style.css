@@ -9,15 +9,16 @@ Description: index.html
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap');
 
 body {
-margin: 0;
-padding: 0;
-background-color: #000; /* Black background */
-font-family: 'Montserrat', sans-serif;
-display: flex;
-justify-content: center; /* Center horizontally */
-align-items: flex-start; /* Align to the top */
-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Black background */
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: flex-start; /* Align to the top */
+    height: 100vh;
 }
+
 
 /* Nav Container */
 nav {
@@ -108,3 +109,32 @@ width: 100px;
 width: 100px;
 left: calc(78% - 20px); /* Align with the fifth button */
 } 
+
+
+footer {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0; /* Increased padding */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 15px; /* Slightly larger font */
+    z-index: 1000; /* Ensure it's above other content when scrolling */
+    box-shadow: 0 -4px 10px rgba(255, 255, 255, 0.1); /* Optional: adds a subtle top shadow */
+}
+
+footer p {
+    margin: 8px 0; /* More vertical space between lines */
+}
+
+footer a {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #fff;
+}
