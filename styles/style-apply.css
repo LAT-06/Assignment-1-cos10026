@@ -14,22 +14,21 @@ body{
 }
 
 .nav{
-    margin-bottom: 10px;
+
     animation: fade-down 0.5s;
 }
 
 
 
 .title{
-    
-    background-color: #585757;
-    margin: 30px;
+    padding: 0px;
+    color: gold;
     border-radius: 10px;
+    animation: fade-up 0.9s;
 }
 
 h1{
     font-size: 40px;
-    color: rgb(231, 202, 37);
 }
 
 .form-container .title{
@@ -37,20 +36,19 @@ h1{
 }
 
 .form-container {
-    width: 700px;
-    margin: 50px;
+    width: 700px;    
     padding: 19px;
     flex-direction: column;
     overflow: auto;
     margin-bottom: 10px;
     
-    background-color: #151515;
+    background-color: #1e1e1e;
     border-radius: 15px;
-    animation: fade-up 0.5s;
+    animation: fade-up 0.9s;
 }
 
 .input-box {
-    color: rgb(231, 202, 37);
+    color: white;
 }
 
 .form-container form .user-details {
@@ -69,10 +67,15 @@ form .user-details .input-box {
     width: calc(100%/ 2 - 20px);
 }
 
-form    .gender-details .category {
+form .gender-details .category {
     display: flex;
     width: 80%;
     justify-content: space-between;
+}
+
+form .input-box input, textarea {
+    background-color: gold;
+    border-radius: 10px;
 }
 
 form    .input-box .skill-category {
@@ -86,12 +89,16 @@ form .button {
     margin: 10px 0;
 }
 form .button input{
-    
+    font-family: 'Montserrat';
     height: 100%;
     width: 100%;
     border-radius: 50px;
     font: bold 15pt '';
     background: linear-gradient(270deg, rgb(231, 202, 37), rgb(247, 225, 104))
+}
+
+.button input:hover {
+    border: 1px solid #07affd;
 }
 
 input[type="submit"] {
@@ -105,14 +112,8 @@ input, textarea {
 }
 
 input:hover, textarea:hover{
-    background-color: #fafafa;
+    border: 1px solid #07affd;
 }
-
-input:hover, textarea:hover{
-    border: 1px solid #FFFFFF;
-    
-}
-
 
 
 @keyframes fade-up {
@@ -136,5 +137,11 @@ input:hover, textarea:hover{
     to {
         opacity: 1;
         transform: translateY(0px) scale(1);
+    }
+}
+
+@media (maxwidth: 584px) {
+    .form-container{
+        max-width: 100%;
     }
 }

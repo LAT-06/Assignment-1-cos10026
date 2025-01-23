@@ -21,34 +21,34 @@
             </nav>
         </header>
 
-    <div class="form-container"> 
         <header>
-                <div class="title">
-                    <h1><strong>Application Form</strong></h1>
-                </div>
+            <div class="title">
+                <h1><strong>Application Form</strong></h1>
+            </div>
         </header>
-        
+
+    <div class="form-container">               
         <section>
             <form id="applyform" method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
                 <section class="user-details">
                     <section class="input-box">
                         <label class="details" for="jobnum">Job Reference Number</label>
-                        <input type="text" id="jobnum" name="jobnum" style="background-color: #afa1a1;" pattern="[a-zA-Z0-9]{5}" required>
+                        <input type="text" id="jobnum" name="jobnum" pattern="[a-zA-Z0-9]{5}" required>
                     </section>
                     
                     <section class="input-box">
                         <label  class="details" for="firstname">First Name</label>
-                        <input type="text" id="firstname" name="firstname" style="background-color: #afa1a1;" maxlength="20" pattern="[a-zA-Z\s]{}" required>
+                        <input type="text" id="firstname" name="firstname" maxlength="20" pattern="[a-zA-Z\s]{}" required>
                     </section>
 
                     <section class="input-box">
                         <label  class="details" name="last-name" for="name2">Last Name</label>
-                        <input type="text" id="name2" name="name" style="background-color: #afa1a1;" maxlength="20" pattern="[A-Za-z\s]{}" required>
+                        <input type="text" id="name2" name="name" maxlength="20" pattern="[A-Za-z\s]{}" required>
                     </section>
         
                     <section class="input-box">
                         <label class="details" for="birthdate">Date of Birth</label><br>
-                        <input type="date" id="birthdate" name="birthdate" style="background-color: #afa1a1;" required>
+                        <input type="date" id="birthdate" name="birthdate" required>
                     </section>
         
                     <section class="input-box">
@@ -67,12 +67,12 @@
         
                     <section class="input-box">
                         <label class="details" for="strad">Street Address</label>
-                            <input type="text" id="strad" name="strad" style="background-color: #afa1a1;"  maxlength="40" required>                       
+                            <input type="text" id="strad" name="strad"  maxlength="40" required>                       
                     </section>
         
                     <section class="input-box">
                         <label for="town">Suburb/Town</label>
-                        <input type="text" id="town" name="town" style="background-color: #afa1a1;" maxlength="40"  required>
+                        <input type="text" id="town" name="town" maxlength="40"  required>
                     </section>
         
                     <section class="input-box">
@@ -80,15 +80,15 @@
         
                         <div>
                             <select name="state" id="state" required>
-                                <option>Select your State</option>
-                                <option>VIC</option>
-                                <option>NSW</option>
-                                <option>QLD</option>
-                                <option>NT</option>
-                                <option>WA</option>
-                                <option>SA</option>
-                                <option>TAS</option>
-                                <option>ACT</option>
+                                <option value="">Select your State</option>
+                                <option value="VIC">VIC</option>
+                                <option value="NSW">NSW</option>
+                                <option value="QLD">QLD</option>
+                                <option value="NT">NT</option>
+                                <option value="WA">WA</option>
+                                <option value="SA">SA</option>
+                                <option value="TAS">TAS</option>
+                                <option value="ACT">ACT</option>
                             </select>
                         </div>
                     </section>
@@ -97,21 +97,21 @@
                         <label for="postal">Postcode</label>
         
                         <div>
-                            <input type="text" id="postal" name="postal" style="background-color: #afa1a1;" pattern="[0-9]{4}" required>
+                            <input type="text" id="postal" name="postal" pattern="[0-9]{4}" required>
                         </div>
                     </section>
         
                     <section class="input-box">
                         <label for="email">Email Address</label>
                         <div>
-                            <input type="email" id="email" name="email" style="background-color: #afa1a1;" required>
+                            <input type="email" id="email" name="email" required>
                         </div>
                     </section>
     
                     <section class="input-box">
                         <label for="phone">Phone Number</label>
                         <div>
-                            <input type="text" id="phone" name="phone" style="background-color: #afa1a1;" pattern="[0-9\s]{8,12}" required>
+                            <input type="text" id="phone" name="phone" pattern="[0-9\s]{8,12}" required>
                         </div>
                     </section>
     
@@ -119,15 +119,15 @@
                         <label for="skill"><u>Skills</u></label>
                         <div class="skill-category">
                                 <label for="technical">Technical</label>
-                                <input type="checkbox" id="technical" name="technical" value="technical">
+                                <input type="checkbox" id="technical" name="skill" value="technical">
 
                                 <label for="soft">Soft</label>
-                                <input type="checkbox" id="soft" name="soft" value="soft">
+                                <input type="checkbox" id="soft" name="skill" value="soft">
                             
                                 <label for="other">Other</label>
-                                <input type="checkbox" id="other" name="other" value="other"> 
+                                <input type="checkbox" id="other" name="skill" value="other"> 
                         </div>
-                        <textarea style="background-color: #afa1a1;" placeholder="Other skills..." cols="42" rows="4"></textarea>
+                        <textarea placeholder="Other skills..." cols="42" rows="4" name="skill"></textarea>
                     </section>
 
                     <section class="button">
@@ -139,8 +139,9 @@
             </form>
         </section>
     </div>
-    
-    
-    
+    <footer>
+        <p>&copy; 2024 TechForce Solutions. All rights reserved.</p>
+        <p>Contact us: <a href="mailto:group@example.com">group@example.com</a></p>
+    </footer>
 </body>
 </html>
