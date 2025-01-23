@@ -24,12 +24,14 @@ body{
 }
 
 .text-container{
+    padding: 0px 10px;
+    cursor: pointer;
     overflow: hidden;
 }
 
 h1{
-    font: 2rem 'Montserrat';
-    color: gold;
+    font: calc(2rem + 0.5vw) 'Montserrat';
+    color: #FFE715;
 }
 
 #mid{
@@ -38,6 +40,7 @@ h1{
 }
 
 main{
+    min-width: 470px;
     margin: 20px;
     padding: 20px;
     width: calc(100% - 25vw - 160px);
@@ -49,6 +52,7 @@ main{
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
+    row-gap: 100px;
     justify-content: space-between;
 }
 
@@ -57,17 +61,20 @@ main{
     border-radius: 15px;
     color: black;
     background-color: #1e1e1e;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     width: calc(50% - 60px);
+    min-width: 320px;
+    max-width: 480px;
 }
 
 .card:hover{
     transform: translateY(-2.5%);
+    box-shadow: 0px 2px 16px gray;
 }
 
 #card-header{
     padding: 10px 20px;
-    background: gold;
+    background: #FFE715;
     text-align: center;
 }
 
@@ -95,11 +102,151 @@ h3, p{
 
 aside{    
     margin: 20px;
-    padding: 20px;
+    /* padding: 20px; */
     width: 25vw;
-    height: calc(100% - 80px);
-    background-color: tomato;
+    min-width: 140px;
+    border-radius: 15px;
+    height: auto;
+    background-color:#101920;
+    border: 4px solid #FFE715;
     float: right;
+    display: flex;
+}
+
+.aside-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+    gap: 5vh;
+    justify-content: flex-start;
+    /* background-color: yellow; */
+}
+
+.card-flip{
+    min-width: 140px;
+    width: 100%;
+    aspect-ratio: 5/7;
+    border-radius: 15px;
+    transition: transform 0.6s;
+    color: #FFE715;
+    background-color: black;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+.card-flip:hover{
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+    margin: 0;
+    border-radius: 15px;
+    position: absolute;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.card-front{
+    background-color: black;
+    color: #FFE715;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.2vw;
+}
+
+.card-back{
+    position: relative;
+    font-size: 1.8vw;
+    transform: rotateY(180deg);
+}
+
+.card-back-header{
+    margin: 0;
+    font-size: 1.4vw;
+    height: 10%;
+    width: 100%;
+    padding-top: 5%;
+    text-align: center;
+}
+
+.card-back-mid{
+    position: relative;
+    width: 100%;
+    height: 60%;
+}
+
+
+.progress-bar-container{
+    left: 7.5%;
+    width: 3vw;
+    height: 100%;
+    border: 2px solid white;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+}
+
+#fsd01-progress-bar{
+    width: 100%;
+    height: 75%;
+    background-color: orange;
+}
+
+#db456-progress-bar{
+    width: 100%;
+    height: 57%;
+    background-color: orange;
+}
+
+#pm789-progress-bar{
+    width: 100%;
+    height: 85%;
+    background-color: orange;
+}
+
+#uxd01-progress-bar{
+    width: 100%;
+    height: 22%;
+    background-color: orange;
+}
+
+.progress-bar-percentage{
+    font-size: 1.2vw;
+}
+
+.metric-wrapper{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: space-between;
+    padding-left: 0; /* List-style auto indent */
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    top: -7.5%;
+    left: 10vw;
+}
+
+.metric-stats{
+    width: 100%;
+    display: block;
+    float: left;
+    font-size: 4vw;
+}
+
+.card-back-footer{
+    font-size: 1.5vw;
+    padding-top: 10%;
+    height: 30%;
+    width: 100%;
+    text-align: center;
 }
 
 
@@ -116,29 +263,29 @@ hr{
     }
 }
 
-@keyframes slideInLeft {
+@keyframes rolling{
     0%{
-        transform: translateX(-100%);
+        transform: rotate(0deg) translateX(0%);
+        background-color: tomato;
     }
+
     100%{
-        transform: translateX(0%);
+        transform: rotate(360deg);
+        translate: 400%;
+        background-color: #FFE715;
     }
 }
 
-@keyframes slideInRight {
-    0%{
-        transform: translateX(100%);
+@media screen and (max-width: 1200px) {
+    .card{
+        width: calc(100% - 120px);
     }
-    100%{
-        transform: translateX(0%);
-    }
-}
 
-@keyframes slideInDown {
-    0%{
-        transform: translateY(-100%);
+    .main-wrapper{
+        justify-content: center;
     }
-    100%{
-        transform: translateX(0%);
-    }
-}
+  }
+
+@media screen and (max-width: 960px){
+
+  }
