@@ -1,3 +1,8 @@
+/* 
+Student Name: Lam An Thinh
+Student ID: 105508512
+Description: index.html
+*/
 
 /* Body Styling */
 
@@ -12,94 +17,124 @@ body {
     justify-content: center; /* Center horizontally */
     align-items: flex-start; /* Align to the top */
     height: 100vh;
-  }
-  
-  /* Nav Container */
-  .nav {
-    position: relative;
-    background-color: #111; /* Slightly lighter black for the nav bar */
-    width: 500px;
-    height: 60px;
-    margin-top: 20px; /* Add a small margin from the top */
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
-  }
-  
-  /* Buttons */
-  .btn {
-    color: #fff; /* White text */
-    font-size: 16px;
+}
+
+
+/* Nav Container */
+nav {
+position: relative;
+background-color: #111; /* Slightly lighter black for the nav bar */
+width: 500px;
+height: 60px;
+margin-top: 20px; /* Add a small margin from the top */
+display: flex;
+justify-content: space-around;
+align-items: center;
+border-radius: 10px;
+box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Buttons */
+.btn {
+color: #fff; /* White text */
+font-size: 16px;
+text-decoration: none;
+cursor: pointer;
+position: relative;
+transition: color 0.3s;
+}
+
+.btn:hover {
+color: #ddd; /* Light gray text on hover */
+}
+
+/* Horizontal Bars */
+.line {
+position: absolute;
+height: 4px;
+background-color: #fff; /* White lines */
+transition: all 0.3s ease;
+}
+
+/* Top Line */
+.line.top {
+width: 40px; /* Default width */
+top: -6px; /* Position just above the nav bar */
+left: 10px; /* Default position */
+}
+
+/* Bottom Line */
+.line.bottom {
+width: 40px; /* Default width */
+bottom: -6px; /* Position just below the nav bar */
+left: 450px; /* Default position */
+}
+
+/* On Hover: Move lines to align with the hovered button */
+.btn:nth-child(1):hover ~ .line.top {
+left: calc(9.5% - 20px); /* Align with the first button */
+}
+.btn:nth-child(1):hover ~ .line.bottom {
+left: calc(9.5% - 20px); /* Align with the first button */
+}
+
+.btn:nth-child(2):hover ~ .line.top {
+left: calc(27.5% - 20px); /* Align with the second button */
+}
+.btn:nth-child(2):hover ~ .line.bottom {
+left: calc(27.5% - 20px); /* Align with the second button */
+}
+
+.btn:nth-child(3):hover ~ .line.top {
+left: calc(45.5% - 20px); /* Align with the third button */
+width: 25px;
+}
+.btn:nth-child(3):hover ~ .line.bottom {
+left: calc(45.5% - 20px); /* Align with the third button */
+width: 25px;
+}
+
+.btn:nth-child(4):hover ~ .line.top {
+left: calc(59.7% - 20px); /* Align with the fourth button */
+}
+.btn:nth-child(4):hover ~ .line.bottom {
+left: calc(59.7% - 20px); /* Align with the fourth button */
+}
+
+.btn:nth-child(5):hover ~ .line.top {
+left: calc(78% - 20px); /* Align with the fifth button */
+width: 100px;
+}
+.btn:nth-child(5):hover ~ .line.bottom {
+width: 100px;
+left: calc(78% - 20px); /* Align with the fifth button */
+} 
+
+
+footer {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0; /* Increased padding */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 15px; /* Slightly larger font */
+    z-index: 1000; /* Ensure it's above other content when scrolling */
+    box-shadow: 0 -4px 10px rgba(255, 255, 255, 0.1); /* Optional: adds a subtle top shadow */
+}
+
+footer p {
+    margin: 8px 0; /* More vertical space between lines */
+}
+
+footer a {
+    color: #ddd;
     text-decoration: none;
-    cursor: pointer;
-    position: relative;
     transition: color 0.3s;
-  }
-  
-  .btn:hover {
-    color: #ddd; /* Light gray text on hover */
-  }
-  
-  /* Horizontal Bars */
-  .line {
-    position: absolute;
-    height: 4px;
-    background-color: #fff; /* White lines */
-    transition: all 0.3s ease;
-  }
-  
-  /* Top Line */
-  .line.top {
-    width: 40px; /* Default width */
-    top: -6px; /* Position just above the nav bar */
-    left: 10px; /* Default position */
-  }
-  
-  /* Bottom Line */
-  .line.bottom {
-    width: 40px; /* Default width */
-    bottom: -6px; /* Position just below the nav bar */
-    left: 450px; /* Default position */
-  }
-  
-  /* On Hover: Move lines to align with the hovered button */
-  .btn:nth-child(1):hover ~ .line.top {
-    left: calc(9.5% - 20px); /* Align with the first button */
-  }
-  .btn:nth-child(1):hover ~ .line.bottom {
-    left: calc(9.5% - 20px); /* Align with the first button */
-  }
-  
-  .btn:nth-child(2):hover ~ .line.top {
-    left: calc(27.5% - 20px); /* Align with the second button */
-  }
-  .btn:nth-child(2):hover ~ .line.bottom {
-    left: calc(27.5% - 20px); /* Align with the second button */
-  }
-  
-  .btn:nth-child(3):hover ~ .line.top {
-    left: calc(45.5% - 20px); /* Align with the third button */
-    width: 25px;
-  }
-  .btn:nth-child(3):hover ~ .line.bottom {
-    left: calc(45.5% - 20px); /* Align with the third button */
-    width: 25px;
-  }
-  
-  .btn:nth-child(4):hover ~ .line.top {
-    left: calc(59.7% - 20px); /* Align with the fourth button */
-  }
-  .btn:nth-child(4):hover ~ .line.bottom {
-    left: calc(59.7% - 20px); /* Align with the fourth button */
-  }
-  
-  .btn:nth-child(5):hover ~ .line.top {
-    left: calc(78% - 20px); /* Align with the fifth button */
-    width: 100px;
-  }
-  .btn:nth-child(5):hover ~ .line.bottom {
-    width: 100px;
-    left: calc(78% - 20px); /* Align with the fifth button */
+}
+
+footer a:hover {
+    color: #fff;
 }
