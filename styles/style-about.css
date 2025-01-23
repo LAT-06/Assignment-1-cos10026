@@ -12,14 +12,26 @@ body {
     align-items: center;
 }
 
-.Nam {
-    
-}
-
 img {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
-    margin-top: 50px;
+    margin: auto;
 }
 
+th, td {
+    border: 1px solid #fff;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+figure {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.NamPic {
+    justify-content: flex-start;
+}
