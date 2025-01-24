@@ -67,12 +67,12 @@ figure {
     width: 650px;
     height: 400px;
     display: flex;
-    background-color: #fff;
+    background-color: #000;
     flex-wrap: wrap;
 }
 
 .slider{
-    background-color: darkcyan;
+    background-color: #000;
     min-width: 650px;
     height: 218px;
     display: flex;
