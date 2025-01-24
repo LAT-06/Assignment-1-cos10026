@@ -26,13 +26,41 @@ th, td {
     padding: 10px;
 }
 
+table {
+    position: absolute;
+    top: 400px;
+}
+
 .box {
     background-color: rgba(134,134,134,.1);
     padding: 2.5em;
     margin: 10px;
     border-radius: 1.25em;
-    backdrop-filter: blur(20px);
-    ;
+    box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.1);
+}
+
+.box1 {
+    position: absolute;
+    top: 220px;
+    left: 100px
+}
+
+.box2 {
+    position: absolute;
+    top: 220px;
+    left: 600px
+}
+
+.box3 {
+    position: absolute;
+    top: 220px;
+    left: 1000px
+}
+
+.box4 {
+    position: absolute;
+    top: 220px;
+    left: 1520px
 }
 
 figure {
@@ -43,5 +71,29 @@ figure {
 }
 
 .NamPic {
-    justify-content: flex-start;
+    position: absolute;
+    top: 150px;
+    left: 0px;
+    z-index: -1;
+}
+
+.ThinhPic {
+    position: absolute;
+    top: 150px;
+    left: 500px;
+    z-index: -1;
+}
+
+.KhanhPic {
+    position: absolute;
+    top: 150px;
+    left: 900px;
+    z-index: -1;
+}
+
+.HuyPic {
+    position: absolute;
+    top: 150px;
+    left: 1420px;
+    z-index: -1;
 }
