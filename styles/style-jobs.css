@@ -45,7 +45,7 @@ h1{
 main{
     min-width: 100px;
     margin: 20px;
-    padding: 20px;
+    padding-left: 20px;
     width: calc(100% - 25vw - 160px);
     /* height: calc(100% - 80px); */
     background-color: black;
@@ -54,9 +54,9 @@ main{
 .main-wrapper{
     display: flex;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 20px;
     row-gap: 100px;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .card{
@@ -192,7 +192,7 @@ aside{
 .progress-bar-container{
     left: 7.5%;
     width: 3vw;
-    height: 100%;
+    height: 98%;
     border: 2px solid white;
     display: flex;
     flex-wrap: wrap-reverse;
