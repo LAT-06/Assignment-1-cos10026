@@ -32,7 +32,7 @@ table {
 }
 
 .box {
-    background-color: #151515;
+    background-color: #1515151b;
     padding: 2.5em;
     margin: 10px;
     border-radius: 1.25em;
@@ -74,26 +74,22 @@ figure {
     position: absolute;
     top: 150px;
     left: 0px;
-    z-index: -1;
 }
 
 .ThinhPic {
     position: absolute;
     top: 150px;
     left: 500px;
-    z-index: -1;
 }
 
 .KhanhPic {
     position: absolute;
     top: 150px;
     left: 900px;
-    z-index: -1;
 }
 
 .HuyPic {
     position: absolute;
     top: 150px;
     left: 1420px;
-    z-index: -1;
 }
