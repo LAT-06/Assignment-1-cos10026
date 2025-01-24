@@ -19,6 +19,48 @@ body {
     height: 100vh;
 }
 
+.home_page{
+    background: url(../assets/img/123.jpg);
+    background-size: cover;
+}
+
+#slogan {
+    color: white;
+    position: absolute;
+    top: 24.5%; /* Vị trí theo chiều dọc */
+    left: -5%; /* Bắt đầu bên ngoài mép trái của trang */
+    transform: translate(0, -50%); /* Không dịch chuyển ngang ban đầu */
+    font-size: 50px;
+    font-weight: 700;
+    text-align: left;
+    opacity: 0; /* Ban đầu ẩn */
+    animation: slideIn 1s ease-out forwards; /* Animation trượt vào */
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translate(0, -50%); /* Bắt đầu từ mép trái */
+    }
+    to {
+        opacity: 1;
+        transform: translate(23%, -50%); /* Kết thúc ở vị trí `left: 23%` */
+    }
+}
+
+
+.innovation{
+    color: white;
+    /* move it to the left */
+    position: absolute;
+    top: 150%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    font-weight: 700;
+    text-align: left;
+}
+
 
 /* Nav Container */
 nav {
