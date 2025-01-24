@@ -6,7 +6,7 @@ Description: about.html
 */
 
 body {
-    color: #fff;
+    color: #FFDD03;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -32,7 +32,7 @@ table {
 }
 
 .box {
-    background-color: rgba(134,134,134,.1);
+    background-color: #151515;
     padding: 2.5em;
     margin: 10px;
     border-radius: 1.25em;

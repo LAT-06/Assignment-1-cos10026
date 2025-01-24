@@ -113,7 +113,7 @@ left: calc(78% - 20px); /* Align with the fifth button */
 
 footer {
     background-color: #111;
-    color: #fff;
+    color: #FBC403;
     text-align: center;
     padding: 20px 0; /* Increased padding */
     position: fixed;
@@ -130,11 +130,11 @@ footer p {
 }
 
 footer a {
-    color: #ddd;
+    color: #FBC403;
     text-decoration: none;
     transition: color 0.3s;
 }
 
 footer a:hover {
-    color: #fff;
+    color: #ffe437;
 }
