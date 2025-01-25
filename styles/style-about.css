@@ -12,17 +12,6 @@ body {
     align-items: center;
 }
 
-
-img {
-    max-width: 100%;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 th, td {
     border: 4px solid #ffe715;   
     padding: 20px;
@@ -34,19 +23,6 @@ table {
     left: 50px;
     border-collapse: collapse;
     background-color: #151515;
-}
-
-.box {
-    background-color: #151515;
-    border: 4px solid #ffe715;
-    border-radius: 1.25em;
-    box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.1);
-}
-
-img:hover {
-    cursor: pointer;
-    background-color: #151515;
-    box-shadow: 10px 10px 20px rgb(117, 117, 117);
 }
 
 figure {
@@ -62,45 +38,79 @@ figure {
 
 .container{
     position: relative;
-    top: calc(50% - 400px);
+    top: calc(50% - 250px);
     left: calc(50% - 350px);
-    width: 650px;
+    width: 600px;
     height: 400px;
     display: flex;
-    background-color: #000;
+    background-color: #fff;
     flex-wrap: wrap;
 }
 
+.box{
+    display: flex;
+    background-color: gray;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.box:hover {
+    cursor: pointer;
+    background-color: #151515;
+    box-shadow: 10px 10px 20px rgb(117, 117, 117);
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover{
+    cursor:pointer;
+    background-color: tomato;
+}
+
+.container #box-1:hover ~ .slider .slide{
+    transform: translateX(0%) 2s;
+}
+
+.container #box-2:hover ~ .slider .slide{
+    transform: translateX(-100%);
+}
+
+.container #box-3:hover ~ .slider .slide{
+    transform: translateX(-200%);
+}
+
+.container #box-4:hover ~ .slider .slide{
+    transform: translateX(-300%);
+}
+
 .slider{
-    background-color: #000;
-    min-width: 650px;
-    height: 218px;
+    background-color: darkcyan;
+    min-width: 500px;
+    height: 375px;
     display: flex;
     flex-wrap: nowrap;
 }
 
-.box{
+.slide{
     transition: 0.6s ease-in-out;
-    min-width: 500px;
-    height: 375px;
-    justify-content: center;
+    min-width: 100px;
+    width: 200px;
+    height: 100px;
+    border: 1px solid black;
+    justify-content: flex-start;
     align-items: center;
     display: flex;
     flex-wrap: wrap;
-}
-
-.container .NamPic:hover ~ .slider .box{
-    transform: translateX(0%) 2s;
-}
-
-.container .ThinhPic:hover ~ .slider .box{
-    transform: translateX(-100%);
-}
-
-.container .KhanhPic:hover ~ .slider .box{
-    transform: translateX(-200%);
-}
-
-.container .HuyPic:hover ~ .slider .box{
-    transform: translateX(-300%);
+    
 }
