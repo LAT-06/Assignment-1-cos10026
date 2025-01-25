@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="styles/style-apply.css">
 </head>
 <body>
-    <body>
         <header>
             <nav>
                 <a class="btn" href="index.html">Home</a>
@@ -28,54 +27,54 @@
         </header>
 
     <div class="form-container">               
-        <section>
+        <div>
             <form id="applyform" method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
-                <section class="user-details">
-                    <section class="input-box">
+                <div class="user-details">
+                    <div class="input-box">
                         <label class="details" for="jobnum">Job Reference Number</label>
                         <input type="text" id="jobnum" name="jobnum" pattern="[a-zA-Z0-9]{5}" required>
-                    </section>
+                    </div>
                     
-                    <section class="input-box">
+                    <div class="input-box">
                         <label  class="details" for="firstname">First Name</label>
                         <input type="text" id="firstname" name="firstname" maxlength="20" pattern="[a-zA-Z\s]{}" required>
-                    </section>
+                    </div>
 
-                    <section class="input-box">
-                        <label  class="details" name="last-name" for="name2">Last Name</label>
-                        <input type="text" id="name2" name="name" maxlength="20" pattern="[A-Za-z\s]{}" required>
-                    </section>
+                    <div class="input-box">
+                        <label  class="details" for="lastname">Last Name</label>
+                        <input type="text" id="lastname" name="lastname" maxlength="20" pattern="[A-Za-z\s]{}" required>
+                    </div>
         
-                    <section class="input-box">
+                    <div class="input-box">
                         <label class="details" for="birthdate">Date of Birth</label><br>
                         <input type="date" id="birthdate" name="birthdate" required>
-                    </section>
+                    </div>
         
-                    <section class="input-box">
+                    <div class="input-box">
                         <fieldset class="gender-details">
                             
                             
                             <legend class="gender-title">Gender</legend>  
                                 <div class="category">
                                     <label class="gender" for="gender">Male</label>
-                                    <input type="radio" name="gender" id="male" checked="checked" value="male">                                    
+                                    <input type="radio" id="gender" checked="checked" value="male">                                    
                                     <label class="gender" for="gender">Female</label>  
-                                    <input type="radio" name="gender" id="female" value="female">                       
+                                    <input type="radio" value="female">                       
                             </div>
                         </fieldset>
-                    </section>
+                    </div>
         
-                    <section class="input-box">
+                    <div class="input-box">
                         <label class="details" for="strad">Street Address</label>
-                            <input type="text" id="strad" name="strad"  maxlength="40" required>                       
-                    </section>
+                            <input type="text" id="strad" name="str_add"  maxlength="40" required>                       
+                    </div>
         
-                    <section class="input-box">
+                    <div class="input-box">
                         <label for="town">Suburb/Town</label>
                         <input type="text" id="town" name="town" maxlength="40"  required>
-                    </section>
+                    </div>
         
-                    <section class="input-box">
+                    <div class="input-box">
                         <label for="state">State</label>
         
                         <div>
@@ -91,53 +90,51 @@
                                 <option value="ACT">ACT</option>
                             </select>
                         </div>
-                    </section>
+                    </div>
         
-                    <section class="input-box">
+                    <div class="input-box">
                         <label for="postal">Postcode</label>
         
                         <div>
                             <input type="text" id="postal" name="postal" pattern="[0-9]{4}" required>
                         </div>
-                    </section>
+                    </div>
         
-                    <section class="input-box">
+                    <div class="input-box">
                         <label for="email">Email Address</label>
                         <div>
                             <input type="email" id="email" name="email" required>
                         </div>
-                    </section>
+                    </div>
     
-                    <section class="input-box">
+                    <div class="input-box">
                         <label for="phone">Phone Number</label>
                         <div>
                             <input type="text" id="phone" name="phone" pattern="[0-9\s]{8,12}" required>
                         </div>
-                    </section>
+                    </div>
     
-                    <section class="input-box">
-                        <label for="skill"><u>Skills</u></label>
-                        <div class="skill-category">
+                    <div class="input-box">
+                        <label><u>Skills</u></label>
+                        <div class="skill-category" required>
                                 <label for="technical">Technical</label>
-                                <input type="checkbox" id="technical" name="skill" value="technical">
+                                <input type="checkbox" name="skill" id="technical" value="technical">
 
                                 <label for="soft">Soft</label>
-                                <input type="checkbox" id="soft" name="skill" value="soft">
+                                <input type="checkbox"  name="skill" id="soft" value="soft">
                             
-                                <label for="other">Other</label>
-                                <input type="checkbox" id="other" name="skill" value="other"> 
+                                <label for="other">Other Skills...</label>
+                                <input type="checkbox" name="skill" id="other" value="other"> 
                         </div>
-                        <textarea placeholder="Other skills..." cols="42" rows="4" name="skill"></textarea>
-                    </section>
+                        <textarea placeholder="Other skills..." cols="42" rows="4" name="other"></textarea>
+                    </div>
 
-                    <section class="button">
+                    <div class="button">
                         <input type="submit" value="Apply">
-                    </section>
-                </section>
-                
-            
+                    </div>
+                </div>
             </form>
-        </section>
+        </div>
     </div>
     <footer>
         <p>&copy; 2024 TechForce Solutions. All rights reserved.</p>
