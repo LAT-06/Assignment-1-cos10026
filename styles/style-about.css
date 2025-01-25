@@ -14,13 +14,13 @@ body {
 
 th, td {
     border: 4px solid #ffe715;   
-    padding: 20px;
+    padding: 1.3em;
 }
 
 table {
     position: absolute;
-    top: 450px;
-    left: 50px;
+    top: 80vh;
+    left: 3vw;
     border-collapse: collapse;
     background-color: #151515;
 }
@@ -36,22 +36,34 @@ figure {
     text-align: center;
 }
 
+img {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .container{
     position: relative;
-    top: calc(50% - 250px);
+    top: calc(50% - 400px);
     left: calc(50% - 350px);
-    width: 600px;
-    height: 400px;
+    width: 35vw;
+    height: 60vh;
     display: flex;
-    background-color: #fff;
+    justify-content: space-evenly;
+    background-color: #000;
     flex-wrap: wrap;
+    z-index: 1;
 }
 
 .box{
     display: flex;
     background-color: gray;
-    width: 100%;
-    height: 100%;
+    width: 6vw;
+    height: 12vh;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
@@ -63,20 +75,7 @@ figure {
     box-shadow: 10px 10px 20px rgb(117, 117, 117);
 }
 
-img {
-    max-width: 100%;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.box:hover{
-    cursor:pointer;
-    background-color: tomato;
-}
 
 .container #box-1:hover ~ .slider .slide{
     transform: translateX(0%) 2s;
@@ -95,22 +94,23 @@ img {
 }
 
 .slider{
-    background-color: darkcyan;
-    min-width: 500px;
-    height: 375px;
+    background-color: #000;
+    width: 35vw;
+    height: 48.8vh;
     display: flex;
     flex-wrap: nowrap;
+    position: absolute;
+    top: 13vh;
+    left: 26.9vw;
 }
 
 .slide{
     transition: 0.6s ease-in-out;
-    min-width: 100px;
-    width: 200px;
-    height: 100px;
-    border: 1px solid black;
+    width: 35vw;
+    height: 48.5vh;
+    border: 1px solid #FFDD03;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     display: flex;
     flex-wrap: wrap;
-    
 }
