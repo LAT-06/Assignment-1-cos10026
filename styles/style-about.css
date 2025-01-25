@@ -14,7 +14,7 @@ body {
 
 th, td {
     border: 4px solid #ffe715;   
-    padding: 1.3em;
+    padding: 0.8em;
 }
 
 table {
@@ -32,14 +32,18 @@ figure {
     gap: 10px;
 }
 
+footer {
+    display: none;
+}
+
 .tutor {
     text-align: center;
 }
 
 img {
     max-width: 100%;
-    width: 100%;
-    height: 100%;
+    width: 150%;
+    height: 150%;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -48,8 +52,8 @@ img {
 
 .container{
     position: relative;
-    top: calc(50% - 400px);
-    left: calc(50% - 350px);
+    top: calc(50% - 300px);
+    left: calc(50% - 250px);
     width: 35vw;
     height: 60vh;
     display: flex;
@@ -62,8 +66,8 @@ img {
 .box{
     display: flex;
     background-color: gray;
-    width: 6vw;
-    height: 12vh;
+    width: 7vw;
+    height: 14vh;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
@@ -96,18 +100,19 @@ img {
 .slider{
     background-color: #000;
     width: 35vw;
-    height: 48.8vh;
+    height: 50vh;
     display: flex;
-    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: flex-start;
     position: absolute;
     top: 13vh;
-    left: 26.9vw;
+    left: 27vw;
 }
 
 .slide{
     transition: 0.6s ease-in-out;
-    width: 35vw;
-    height: 48.5vh;
+    width: 50vw;
+    height: 50vh;
     border: 1px solid #FFDD03;
     justify-content: flex-start;
     align-items: flex-start;
