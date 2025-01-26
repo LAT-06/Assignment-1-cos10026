@@ -19,7 +19,7 @@ th, td {
 
 table {
     position: static;
-    top: 80vh;
+    top: 100vh;
     left: 3vw;
     border-collapse: collapse;
     background-color: #151515;
