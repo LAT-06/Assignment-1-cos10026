@@ -9,10 +9,12 @@ Description: jobs.html
 
 body{
     color: #FBFCD4;
+    display: flex;
     font-family: 'Montserrat';
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    height: 100vh;
 }
 
 .nav{
@@ -24,20 +26,24 @@ body{
 }
 
 .text-container{
+    width: 100%;
     padding: 0px 10px;
     cursor: pointer;
-    overflow: hidden;
+    justify-self: center;
 }
 
 h1{
     font: calc(2rem + 0.5vw) 'Montserrat';
     color: #FFE715;
+    text-align: center;
+    animation: slideInLeftH1 1.25s ease-in-out;
 }
 
 #mid{
+    position: relative;
     padding-bottom: 50px;
     width: 98vw;
-    height: auto;
+    /* height: auto; */
     /* background-color: tomato; */
     display: flex;
 }
@@ -243,7 +249,7 @@ aside{
     width: 60%;
     height: 100%;
     top: -7.5%;
-    left: 10vw;
+    left: 40%;
 }
 
 
@@ -274,7 +280,15 @@ hr{
     width: 98vw;
 }
 
+@keyframes slideInLeftH1{
+    0%{
+        transform: translateX(-10vw);
+    }
 
+    100%{
+        transform: translateX(0%);
+    }
+}
 
 @keyframes slideInLeft{
     0%{
@@ -331,8 +345,8 @@ hr{
 
     aside{
         position: relative;
-        top: 4.5%;
-        height: 87%;
+        top: 7.5%;
+        min-height: 87%;
         width: 40%;
     }
 
