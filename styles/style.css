@@ -314,7 +314,7 @@ left: calc(78% - 20px); /* Align with the fifth button */
     overflow: hidden;
 }
 
-/* Tiêu đề chính */
+/* Main title*/
 .blur-title {
     font-size: 2rem;
     font-weight: bold;
