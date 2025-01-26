@@ -18,7 +18,7 @@ th, td {
 }
 
 table {
-    position: sticky;
+    position: static;
     top: 80vh;
     left: 3vw;
     border-collapse: collapse;
