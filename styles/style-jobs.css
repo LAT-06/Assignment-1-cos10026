@@ -241,7 +241,6 @@ aside{
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
-    align-items: space-between;
     padding-left: 0; /* List-style auto indent */
     position: absolute;
     width: 60%;
