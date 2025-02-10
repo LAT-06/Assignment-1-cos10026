@@ -216,7 +216,6 @@ left: calc(78% - 20px); /* Align with the fifth button */
     width: 100%;
     height: 100%;
     transition: all 0.3s ease;
-    -webkit-transform: scale(.1);
     transform: scale(.1);
 }
 
@@ -228,7 +227,6 @@ left: calc(78% - 20px); /* Align with the fifth button */
 
 .btn-10:hover:after {
     background: #FBC403;
-    -webkit-transform: scale(1);
     transform: scale(1);
 }
 
@@ -321,10 +319,6 @@ left: calc(78% - 20px); /* Align with the fifth button */
     color: #ffffff;
     background: linear-gradient(90deg, #d0c312, goldenrod); /* Gradient màu vàng */
     background-clip: text; /* Chuẩn hóa CSS */
-    -webkit-background-clip: text; /* Hỗ trợ cho Safari và Chrome */
-    -moz-background-clip: text; /* Hỗ trợ cho các trình duyệt cũ của Firefox */
-    -ms-background-clip: text; /* Hỗ trợ cho Internet Explorer (nếu cần) */
-    -webkit-text-fill-color: transparent; /* Hỗ trợ cho Safari và Chrome */
     margin-bottom: 10px;
     opacity: 0; /* Ban đầu ẩn */
     animation: slideInFromLeft 1s ease-out forwards; /* Hiệu ứng animation */
