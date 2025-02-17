@@ -7,7 +7,7 @@ Description: about.html
 
 /* set the background color of the body to gold color and use flex box */
 body {
-    color: #FFDD03;
+    color: #e3e3e3;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -83,6 +83,7 @@ img {
     width: 7vw;
     border-radius: 50%;
     color: #daaa52;
+    font-weight: 400;
     aspect-ratio: 1 / 1;
 }
 
@@ -101,19 +102,19 @@ img {
 }
 
 .container #box-2:hover ~ .slider .slide{
-    transform: translateY(-100%);
+    transform: translateY(-105%);
 }
 
 .container #box-3:hover ~ .slider .slide{
-    transform: translateY(-200%);
+    transform: translateY(-207%);
 }
 
 .container #box-4:hover ~ .slider .slide{
-    transform: translateY(-300%);
+    transform: translateY(-310%);
 }
 
 .container #box-5:hover ~ .slider .slide{
-    transform: translateY(-400%);
+    transform: translateY(-415%);
 }
 
 .slider{
