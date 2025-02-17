@@ -16,7 +16,7 @@ body {
 
 /* change the style and align the table to the center of the page */
 th, td {
-    border: 4px solid #ffe715;   
+    border: 4px solid #daaa52;   
     padding: 0.8em;
 }
 
@@ -82,7 +82,7 @@ img {
     font-size: 1vw;
     width: 7vw;
     border-radius: 50%;
-    color: #FFDD03;
+    color: #daaa52;
     aspect-ratio: 1 / 1;
 }
 
@@ -90,9 +90,9 @@ img {
     cursor: pointer;
     font-weight: bolder;
     color: #000;
-    background-color: #FFDD03;
+    background-color: #daaa52;
     
-    box-shadow: 10px 10px 20px rgb(235, 199, 19);
+    box-shadow: 10px 10px 20px rgb(218, 170, 82);
 }
 
 /* animation to move the slide show */
@@ -117,7 +117,7 @@ img {
 }
 
 .slider{
-    background-color: #ffe815f1;
+    background-color: #daaa52;
     border-radius: 10px;
     width: 100%;
     height: 70%;
