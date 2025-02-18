@@ -5,26 +5,28 @@ Created: 20 January 2025
 Description: jobs.html
 */
 
+/* Importing Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap');
 
+/* Global Body styling: 
+    column-flex
+*/
 body{
     color: #FBFCD4;
     display: flex;
     font-family: 'Montserrat';
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: flex-start; /* Start from the top */
     height: 100vh;
 }
 
-.nav{
-    margin-bottom: 20px;
-}
-
+/* Page Header Styling */
 #page-header{
     margin-bottom: 10px
 }
 
+/* Text-container Styling */
 .text-container{
     width: 100%;
     padding: 0px 10px;
@@ -32,13 +34,15 @@ body{
     justify-self: center;
 }
 
+/* Bright yellow h1 */
 h1{
-    font: normal calc(2rem + 0.5vw) 'Montserrat';
+    font: normal calc(2rem + 0.5vw) 'Montserrat'; /* Responsive Font size */
     color: #FFE715;
     text-align: center;
-    animation: slideInLeftH1 1.25s ease-in-out;
+    animation: slideInLeftH1 1.25s ease-in-out; /* SlideIn Effect */
 }
 
+/* Middle part wrapper*/
 #mid{
     position: relative;
     padding-bottom: 50px;
@@ -46,6 +50,7 @@ h1{
     display: flex;
 }
 
+/* main tag Styling*/
 main{
     min-width: 100px;
     margin: 20px;
@@ -53,7 +58,7 @@ main{
     width: calc(100% - 25vw - 160px);
     background-color: black;
 }
-
+/* main-wrapper styling */
 .main-wrapper{
     display: flex;
     flex-wrap: wrap;
@@ -62,6 +67,7 @@ main{
     justify-content: space-evenly;
 }
 
+/* Job Description Card styling with lift-up hovering effects */
 .card{
     overflow: hidden;
     border-radius: 15px;
@@ -78,6 +84,7 @@ main{
     box-shadow: 0px 2px 16px gray;
 }
 
+/* Orange card-header */
 .card-header{
     padding: 10px 20px;
     background: #DAA520;
@@ -89,14 +96,16 @@ main{
     margin-bottom: 0;
 }
 
+/* h3, p tag inline */
 h3, p{
     display: inline;
 }
-
+/* Highlighting salary */
 .card-salary{
     color: greenyellow;
 }
 
+/* light gray color for easing feeling to read*/
 .card-body{
     color: #D3D3D3;
     padding: 10px 20px;
@@ -106,6 +115,7 @@ h3, p{
     text-align: center;
 }
 
+/* aside tag Styling: appropriate color with floating to the right */
 aside{    
     margin: 20px;
     padding: 0px;
@@ -119,6 +129,7 @@ aside{
     display: flex;
 }
 
+/* Aside wrapper styling */
 .aside-wrapper{
     display: flex;
     flex-direction: column;
@@ -128,10 +139,12 @@ aside{
     justify-content: space-between;
 }
 
+/* Card flip hovering animation using preserve-3d to 
+maintain position of components in 3D when using transform */
 .card-flip{
     min-width: 140px;
     width: 100%;
-    aspect-ratio: 5/7;
+    aspect-ratio: 5/7; /* maintain appropriate ratio of width/height */
     border-radius: 15px;
     transition: transform 0.6s;
     color: #FFE715;
@@ -143,7 +156,7 @@ aside{
 .card-flip:hover{
     transform: rotateY(180deg);
 }
-
+/* Two faces of the card share mutual styling and some different styling */
 .card-front, .card-back {
     margin: 0;
     border-radius: 15px;
@@ -182,7 +195,7 @@ aside{
 .card-flip:hover .card-back .card-back-header{
     animation: slideInDown 0.6s linear;
 }
-
+/* Back of the card mid container */
 .card-back-mid{
     position: relative;
     overflow: hidden;
@@ -190,7 +203,7 @@ aside{
     height: 60%;
 }
 
-
+/* Drawing progress bar using pure CSS */
 .progress-bar-container{
     left: 7.5%;
     width: 3vw;
@@ -207,6 +220,7 @@ aside{
     animation: slideInLeft 0.6s linear 1;
 }
 
+/* Specific % of already - employed */
 #fsd01-progress-bar{
     width: 100%;
     height: 75%;
@@ -231,10 +245,11 @@ aside{
     background-color: orange;
 }
 
+/* Responsive font-size for progress bar % */
 .progress-bar-percentage{
     font-size: 1.2vw;
 }
-
+/* Specific important metric highlighting in this part */
 .metric-wrapper{
     list-style-type: none;
     display: flex;
@@ -258,7 +273,7 @@ aside{
     float: left;
     font-size: 4vw;
 }
-
+/* Card-back-footer styling */
 .card-back-footer{
     font-size: 1.5vw;
     padding-top: 10%;
@@ -271,10 +286,7 @@ aside{
     animation: slideInUp 0.6s linear;
 }
 
-hr{
-    width: 98vw;
-}
-
+/* Slide In from the left animation for Heading 1 */
 @keyframes slideInLeftH1{
     0%{
         transform: translateX(-10vw);
@@ -285,6 +297,7 @@ hr{
     }
 }
 
+/* Default Slide In effects for 4 directions */
 @keyframes slideInLeft{
     0%{
         transform: translateX(-200%);
@@ -325,6 +338,8 @@ hr{
     }
 }
 
+/* CSS Media query: Modifying the layout ratio as well as card components 
+    to be responsive corresponding to window width */
 @media screen and (max-width: 1160px) {
     .card{
         width: calc(100% - 120px);
