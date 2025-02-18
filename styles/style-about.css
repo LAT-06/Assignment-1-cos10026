@@ -98,7 +98,7 @@ img {
 
 /* animation to move the slide show */
 .container #box-1:hover ~ .slider .slide{
-    transform: translateY(0%) 2s;
+    transform: translateY(0%);
 }
 
 .container #box-2:hover ~ .slider .slide{
