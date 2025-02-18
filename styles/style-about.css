@@ -7,7 +7,7 @@ Description: about.html
 
 /* set the background color of the body to gold color and use flex box */
 body {
-    color: #FFDD03;
+    color: #e3e3e3;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -16,7 +16,7 @@ body {
 
 /* change the style and align the table to the center of the page */
 th, td {
-    border: 4px solid #ffe715;   
+    border: 4px solid #daaa52;   
     padding: 0.8em;
 }
 
@@ -33,7 +33,8 @@ table {
     top: 100vh;
     left: 3vw;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 80px;
+    margin-bottom: 50px;
     border-collapse: collapse;
     background-color: #151515;
 }
@@ -81,7 +82,8 @@ img {
     font-size: 1vw;
     width: 7vw;
     border-radius: 50%;
-    color: #FFDD03;
+    color: #daaa52;
+    font-weight: 400;
     aspect-ratio: 1 / 1;
 }
 
@@ -89,34 +91,34 @@ img {
     cursor: pointer;
     font-weight: bolder;
     color: #000;
-    background-color: #FFDD03;
+    background-color: #daaa52;
     
-    box-shadow: 10px 10px 20px rgb(235, 199, 19);
+    box-shadow: 10px 10px 20px rgb(218, 170, 82);
 }
 
 /* animation to move the slide show */
 .container #box-1:hover ~ .slider .slide{
-    transform: translateY(0%) 2s;
+    transform: translateY(0%);
 }
 
 .container #box-2:hover ~ .slider .slide{
-    transform: translateY(-100%);
+    transform: translateY(-105%);
 }
 
 .container #box-3:hover ~ .slider .slide{
-    transform: translateY(-200%);
+    transform: translateY(-207%);
 }
 
 .container #box-4:hover ~ .slider .slide{
-    transform: translateY(-300%);
+    transform: translateY(-310%);
 }
 
 .container #box-5:hover ~ .slider .slide{
-    transform: translateY(-400%);
+    transform: translateY(-415%);
 }
 
 .slider{
-    background-color: #ffe715;
+    background-color: #daaa52;
     border-radius: 10px;
     width: 100%;
     height: 70%;
